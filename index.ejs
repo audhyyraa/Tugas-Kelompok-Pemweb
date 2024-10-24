@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Landing Page</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the fisheries data mapping website in the Banten region</h1>
+        <% if (user) { %>
+            <p>Hello, <%= user.username %>!</p>
+            <a href="/profile">Profile</a> | <a href="/auth/logout">Logout</a>
+        <% } else { %>
+            <a href="/auth/login">Login</a> | <a href="/auth/register">Register</a>
+        <% } %>
+    </header>
+
+    <main>
+        <h2>Selamat Datang di Website Pemetaan Data Perikanan Wilayah Banten</h2>
+        <p>Kami menyajikan platform yang menyediakan informasi terkini mengenai data perikanan di wilayah Banten, Website ini bertujuan untuk membantu para pemangku kepentingan, nelayan, peneliti, dan masyarakat umum dalam memahami potensi perikanan di Banten melalui pemetaan interaktif dan analisis data yang akurat.
+
+            Dengan menggunakan teknologi modern, kami menawarkan berbagai fitur seperti:
+            
+            Pemetaan lokasi penangkapan ikan
+            Data populasi dan jenis ikan di setiap wilayah
+            Informasi perizinan dan regulasi lokal
+            Analisis tren penangkapan ikan dan kondisi lingkungan
+            Kami berharap platform ini dapat mendukung pengelolaan sumber daya perikanan yang berkelanjutan serta mendukung upaya pelestarian laut dan ekosistem perairan di Banten. Mari kita bekerja sama menjaga kelestarian laut untuk generasi mendatang.</p>
+    </main>
+</body>
+</html>
